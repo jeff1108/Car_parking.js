@@ -5,6 +5,7 @@ describe("CarPark", function() {
   var car;
 
 
+
   beforeEach(function() {
     carpark = new CarPark();
     car = new Car();
@@ -16,5 +17,10 @@ describe("CarPark", function() {
     });
   });
 
+  describe('.charge', () => {
+    it('can show the fee for parking', () => {
+      expect(carpark.charge(car, 1)).toEqual([[car, 10]])
+    });
+  });
 
 });
