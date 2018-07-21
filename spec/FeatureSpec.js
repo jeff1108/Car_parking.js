@@ -1,4 +1,6 @@
-describe("CarPark", function() {
+'use strict';
+
+describe("Feature Test", function() {
   var carpark;
 
 
@@ -6,8 +8,8 @@ describe("CarPark", function() {
     carpark = new CarPark();
   });
 
-  describe('.park', () => {
-    it('can park my car in carpark', () => {
+  describe('Park a car', () => {
+    it('A User can park a car', () => {
       var car
       expect(carpark.park(car)).toContain(car)
     });
