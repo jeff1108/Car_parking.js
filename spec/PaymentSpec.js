@@ -18,4 +18,11 @@ describe("Payment", function() {
       expect(carPark._payment.processPayment(car, 10)).toBeTruthy()
     });
   });
+
+  describe('.topUp', () => {
+    it('adds money to my pocket', () => {
+      payment.topUP(10)
+      expect(payment._my_pocket).toEqual(10);
+    });
+  });
 });

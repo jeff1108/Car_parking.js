@@ -2,6 +2,7 @@
 
 function Payment () {
   this._charge_a_car = [];
+  this._my_pocket = 0;
 }
 
 Payment.prototype.processPayment = function(car, fee) {
@@ -19,4 +20,8 @@ Payment.prototype.processPayment = function(car, fee) {
   } else {
     return false
   }
+}
+
+Payment.prototype.topUP = function(money) {
+  return this._my_pocket += money;
 }
