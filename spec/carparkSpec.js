@@ -23,4 +23,11 @@ describe("CarPark", function() {
     });
   });
 
+  describe('.payFeeCash', () => {
+    it('can pay the fee by cash', () => {
+      expect(carpark.payFeeCash(10)).toBeTruthy()
+    });
+  });
+
+
 });
