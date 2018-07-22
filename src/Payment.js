@@ -22,6 +22,6 @@ Payment.prototype.processPayment = function(car, fee) {
   }
 }
 
-Payment.prototype.topUP = function(money) {
+Payment.prototype.topUp = function(money) {
   return this._my_pocket += money;
 }

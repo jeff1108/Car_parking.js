@@ -21,7 +21,7 @@ describe("Payment", function() {
 
   describe('.topUp', () => {
     it('adds money to my pocket', () => {
-      payment.topUP(10)
+      payment.topUp(10)
       expect(payment._my_pocket).toEqual(10);
     });
   });
